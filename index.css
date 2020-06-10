@@ -1,0 +1,10 @@
+body {
+    background-color: chartreuse;
+}
+
+#divOne {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
