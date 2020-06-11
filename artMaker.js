@@ -15,5 +15,13 @@ window.onload = function(){
   }
   document.body.appendChild(container);    
 
+  let clickBox = document.querySelectorAll('span');
+  
+  for(let pixelBox of clickBox) {
+  pixelBox.addEventListener('click', function(event) {
+    pixelBox.style.backgroundColor = 'red'
+  })
+  }
+
 }
   
