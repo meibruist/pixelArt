@@ -2,6 +2,17 @@ body {
     background-color: chartreuse;
 }
 
+#palatte {
+    background-color: white;
+    height: 33px;
+    width: 200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+
 #canvas {
     background-color: white;
     height: 200px;
