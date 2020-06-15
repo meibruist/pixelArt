@@ -26,20 +26,20 @@ window.onload = function(){
   })
   }
 
-  // color palatte
-  let containerPalatte = document.querySelector('#palatte');
+  // color pallet
+  let containerPallet = document.querySelector('#pallet');
   let colorChoices = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
 
   for(let color of colorChoices) {
-    let boxPalatte = document.createElement('span');
-    boxPalatte.style.border = '2px solid black';
-    boxPalatte.style.backgroundColor = color
-    containerPalatte.appendChild(boxPalatte);
+    let boxPallet = document.createElement('span');
+    boxPallet.style.border = '2px solid black';
+    boxPallet.style.backgroundColor = color
+    containerPallet.appendChild(boxPallet);
   }
- document.body.prepend(containerPalatte);
- 
+ document.body.prepend(containerPallet);
 
-
+// When a user clicks on one of these divs, you'll need to save that 
+// spans color in a variable.
 
 }
   

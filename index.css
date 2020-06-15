@@ -1,8 +1,16 @@
 body {
-    background-color: chartreuse;
+    background-color: khaki;
 }
 
-#palatte {
+#current-color {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    margin: 5px auto;
+}
+
+
+#pallet {
     background-color: white;
     height: 33px;
     width: 200px;
@@ -10,8 +18,6 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
-
-
 
 #canvas {
     background-color: white;
