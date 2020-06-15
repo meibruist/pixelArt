@@ -29,20 +29,35 @@ window.onload = function(){
   }
 
   // color pallet
+  // To create a color pallet, we are going to push in a new div containing each 
+  // color to our 'pallet' div. We'll then add a click event listener to each div 
+  // in our pallet that will modify what color our canvasPixels will turn.
+
   let containerPallet = document.querySelector('#pallet');
   let colorChoices = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
 
   for(let color of colorChoices) {
-    let boxPallet = document.createElement('span');
-    boxPallet.style.border = '2px solid black';
-    boxPallet.style.backgroundColor = color
-    containerPallet.appendChild(boxPallet);
+    // create new div
+    let newColor = document.createElement('div');
+
+    // CSS
+    newColor.style.border = '2px solid black';
+    newColor.style.backgroundColor = color;
+
+    // add an event listener to our color
+    // How can we know what color is selected?
+    // I'll add a 'selected' div to display what color is currently selected
+
+    newColor.addEventListener('click',function() {
+      currentColor = 'color';
+      let selected = document.querySelector('#current-color');
+      selected.style.backgroundColor = color ; 
+    })
+
+    let pallet = document.querySelector('#pallet');
+    pallet.appendChild(newColor);
+
+    containerPallet.appendChild(newColor);
   }
  document.body.prepend(containerPallet);
-
-// When a user clicks on one of these divs, you'll need to save that 
-// spans color in a variable.
-
-
 }
-  
