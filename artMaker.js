@@ -20,9 +20,11 @@ window.onload = function(){
   // event listener for to change color to red
   let clickBox = document.querySelectorAll('span');  
   
+  let currentColor = 'blue';
+
   for(let pixelBox of clickBox) {             // more flexible for loop so it doesn't matter the number of pixels
-  pixelBox.addEventListener('click', function(event) {
-    pixelBox.style.backgroundColor = 'red'
+  pixelBox.addEventListener('click', function() {
+    pixelBox.style.backgroundColor = currentColor
   })
   }
 
@@ -40,6 +42,7 @@ window.onload = function(){
 
 // When a user clicks on one of these divs, you'll need to save that 
 // spans color in a variable.
+
 
 }
   
